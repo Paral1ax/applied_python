@@ -9,23 +9,23 @@ import plotly_express as px
 @st.cache_data
 def work_with_data():
     clients = pd.read_csv(
-        "https://raw.githubusercontent.com/aiedu-courses/stepik_linear_models/main/datasets/D_clients.csv")
+        "https://raw.githubusercontent.com/aiedu-courses/stepik_linear_models/main/datasets/clients/D_clients.csv")
     closed_loan = pd.read_csv(
-        "https://raw.githubusercontent.com/aiedu-courses/stepik_linear_models/main/datasets/D_close_loan.csv")
+        "https://raw.githubusercontent.com/aiedu-courses/stepik_linear_models/main/datasets/clients/D_close_loan.csv")
     job_client = pd.read_csv(
-        "https://raw.githubusercontent.com/aiedu-courses/stepik_linear_models/main/datasets/D_job.csv")
+        "https://raw.githubusercontent.com/aiedu-courses/stepik_linear_models/main/datasets/clients/D_job.csv")
     last_credit = pd.read_csv(
-        "https://raw.githubusercontent.com/aiedu-courses/stepik_linear_models/main/datasets/D_last_credit.csv")
+        "https://raw.githubusercontent.com/aiedu-courses/stepik_linear_models/main/datasets/clients/D_last_credit.csv")
     loan_client = pd.read_csv(
-        "https://raw.githubusercontent.com/aiedu-courses/stepik_linear_models/main/datasets/D_loan.csv")
+        "https://raw.githubusercontent.com/aiedu-courses/stepik_linear_models/main/datasets/clients/D_loan.csv")
     pens_flag_description = pd.read_csv(
-        "https://raw.githubusercontent.com/aiedu-courses/stepik_linear_models/main/datasets/D_pens.csv")
+        "https://raw.githubusercontent.com/aiedu-courses/stepik_linear_models/main/datasets/clients/D_pens.csv")
     salary = pd.read_csv(
-        "https://raw.githubusercontent.com/aiedu-courses/stepik_linear_models/main/datasets/D_salary.csv")
+        "https://raw.githubusercontent.com/aiedu-courses/stepik_linear_models/main/datasets/clients/D_salary.csv")
     agreement_target = pd.read_csv(
-        "https://raw.githubusercontent.com/aiedu-courses/stepik_linear_models/main/datasets/D_target.csv")
+        "https://raw.githubusercontent.com/aiedu-courses/stepik_linear_models/main/datasets/clients/D_target.csv")
     work_flag_description = pd.read_csv(
-        "https://raw.githubusercontent.com/aiedu-courses/stepik_linear_models/main/datasets/D_work.csv")
+        "https://raw.githubusercontent.com/aiedu-courses/stepik_linear_models/main/datasets/clients/D_work.csv")
 
     pens_flag_description.loc[0, 'FLAG'] = 1
     pens_flag_description.loc[1, 'FLAG'] = 0
